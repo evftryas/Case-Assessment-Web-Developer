@@ -1,0 +1,203 @@
+body {
+    background-color: #0B0B0B;
+
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+body>div {
+    scroll-snap-align: start;
+}
+
+.cl-prm {
+    color: #59DFFD;
+}
+
+.cl-wht {
+    color: #fff;
+}
+
+.clean-p {
+    padding: 0;
+    margin: 0;
+}
+
+.w-h-full {
+    width: 100vh;
+    height: 100vh;
+}
+
+.h-100vh {
+    min-height: 100vh;
+}
+
+.font-1 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.font-main {
+    font-size: 5rem;
+}
+
+.font-support {
+    font-size: 2rem;
+}
+
+button {
+    box-shadow: none !important;
+}
+
+button:focus {
+    box-shadow: none;
+    /* fallback */
+}
+
+button:focus-visible {
+    box-shadow: var(--bs-btn-focus-box-shadow);
+    /* pertahankan aksesibilitas */
+}
+
+.w-md-50-normal-75 {
+    width: 50%;
+}
+
+.ulasan {
+    min-height: fit-content;
+    background: #101010;
+}
+
+.signup-button {
+    /* warna dasar hijau */
+    color: white;
+    background-color: #59dffd00;
+    border: 1px solid #59DFFD !important;
+    border-radius: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.signup-button p {
+    margin: 0;
+}
+
+.signup-button:hover {
+    background-color: #59DFFD;
+    /* hijau lebih gelap saat hover */
+    transform: translateY(-2px);
+    /* sedikit terangkat */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+    p {
+        color: black;
+    }
+}
+
+.signup-button:active {
+    background-color: #296674 !important;
+    transform: scale(0.97);
+    /* efek mengecil saat ditekan */
+    box-shadow: 2px 6px 6px #59dffd4d inset;
+
+    p {
+        color: white;
+    }
+}
+
+.signup-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #59DFFD;
+    /* efek fokus */
+}
+
+.shadow {
+    box-shadow: 0 4px 6px #59dffd6b !important;
+}
+
+.w-md-75-normal-100 {
+    width: 75%;
+}
+
+.padding-md-300 {
+    padding-left: 300px;
+}
+
+.padding-left-md-300 {
+    padding-left: 300px;
+}
+
+.desc-text {
+    font-size: 1.6rem;
+}
+
+footer {
+    background-color: #1a1a1a;
+    /* warna gelap elegan */
+    color: #f1f1f1;
+    /* teks kontras */
+    text-align: center;
+    /* teks rata tengah */
+    padding: 15px 10px;
+    /* jarak dalam */
+    font-size: 14px;
+    /* ukuran font */
+    position: relative;
+    /* default, bisa diubah fixed */
+    bottom: 0;
+    width: 100%;
+}
+
+footer p.clean-p {
+    margin: 0;
+    /* hilangin margin bawaan */
+    font-family: "Segoe UI", Arial, sans-serif;
+    letter-spacing: 0.5px;
+    /* jarak antar huruf */
+}
+
+footer p.clean-p::before {
+    content: "© ";
+    /* tambahin simbol copyright */
+}
+
+
+@media screen and (max-width: 1024px) {
+    .font-main {
+        font-size: 6vh !important;
+    }
+
+    .font-support {
+        font-size: 1rem;
+    }
+
+    .w-md-50-normal-75 {
+        width: 75%;
+    }
+
+    .w-md-75-normal-100 {
+        width: 100%;
+    }
+
+    .padding-md-300 {
+        padding-left: 0px;
+    }
+
+    .padding-left-md-300 {
+        padding-left: 0px;
+    }
+
+    .desc-text {
+        font-size: 50%;
+    }
+
+}
